@@ -34,5 +34,11 @@ int main()
 
     // pass the elements of the tuple to the constructor of Foo:
     pair<int,Foo> p2 (piecewise_construct, make_tuple(42), t);
+
+    tuple <int,float,string> tt(77,1.1,"more light");
+    for(int i=0;i<2;i++)
+    {
+        cout<<get<0>(tt)<<endl;
+    }
 }
 
